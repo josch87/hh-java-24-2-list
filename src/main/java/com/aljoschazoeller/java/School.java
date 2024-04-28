@@ -22,6 +22,15 @@ public class School {
         });
     }
 
+    public Student findByID(String targetID) {
+        for (Student student : students) {
+            if (student.studentID.equals(targetID)) {
+                return student;
+            }
+        }
+        return null;
+    }
+
     @Override
     public String toString() {
         return "School{" +

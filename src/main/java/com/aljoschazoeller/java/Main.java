@@ -25,5 +25,7 @@ public class Main {
 
         berthaVonSuttner.printStudents();
 
+        System.out.println(berthaVonSuttner.findByID("34769823562"));
+
     }
 }
