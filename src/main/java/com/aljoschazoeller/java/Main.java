@@ -27,5 +27,9 @@ public class Main {
 
         System.out.println(berthaVonSuttner.findByID("34769823562"));
 
+        berthaVonSuttner.removeStudent(berthaVonSuttner.findByID("34769823562"));
+        berthaVonSuttner.removeStudent(students.get(0));
+        berthaVonSuttner.printStudents();
+
     }
 }
