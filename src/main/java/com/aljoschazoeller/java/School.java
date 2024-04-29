@@ -28,7 +28,7 @@ public class School {
 
     public Student findByID(String targetID) {
         for (Student student : students) {
-            if (student.studentID.equals(targetID)) {
+            if (student.getStudentID().equals(targetID)) {
                 return student;
             }
         }
