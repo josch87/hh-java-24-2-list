@@ -4,6 +4,7 @@ public class Student {
     String studentId;
     String firstName;
     String lastName;
+    List<Course> courses = new ArrayList<>();
 
     public Student(String studentId, String firstName, String lastName) {
         this.studentId = studentId;
@@ -35,12 +36,17 @@ public class Student {
         this.lastName = lastName;
     }
 
+    public void addCourse(Course courseToAdd) {
+        this.courses.add(courseToAdd);
+    }
+
     @Override
     public String toString() {
         return "Student{" +
-                "studentID='" + studentId + '\'' +
+                "studentId='" + studentId + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", courses=" + courses +
                 '}';
     }
 }

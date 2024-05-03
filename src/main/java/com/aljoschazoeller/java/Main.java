@@ -26,10 +26,11 @@ public class Main {
         berthaVonSuttner.printStudents();
 
         System.out.println(berthaVonSuttner.findByID("34769823562"));
+        benjamin.addCourse(new Course("Biology", "Prof. Snape", "Darkroom"));
+        System.out.println(benjamin);
 
         berthaVonSuttner.removeStudent(berthaVonSuttner.findByID("34769823562"));
         berthaVonSuttner.removeStudent(students.getFirst());
         berthaVonSuttner.printStudents();
-
     }
 }
