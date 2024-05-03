@@ -21,14 +21,14 @@ public class School {
         } else {
             System.out.println("Students of " + name + " school:");
             this.students.forEach(student -> {
-                System.out.println(student.firstName + " " + student.lastName + " (" + student.studentID + ")");
+                System.out.println(student.firstName + " " + student.lastName + " (" + student.studentId + ")");
             });
         }
     }
 
     public Student findByID(String targetID) {
         for (Student student : students) {
-            if (student.getStudentID().equals(targetID)) {
+            if (student.getStudentId().equals(targetID)) {
                 return student;
             }
         }
@@ -36,7 +36,7 @@ public class School {
     }
 
     public void removeStudent(Student studentToRemove) {
-        Student isInSchool = findByID(studentToRemove.studentID);
+        Student isInSchool = findByID(studentToRemove.studentId);
         if (isInSchool == null) {
             throw new IllegalArgumentException("Student not found in school");
         }

@@ -1,22 +1,22 @@
 package com.aljoschazoeller.java;
 
 public class Student {
-    String studentID;
+    String studentId;
     String firstName;
     String lastName;
 
-    public Student(String studentID, String firstName, String lastName) {
-        this.studentID = studentID;
+    public Student(String studentId, String firstName, String lastName) {
+        this.studentId = studentId;
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public String getStudentID() {
-        return studentID;
+    public String getStudentId() {
+        return studentId;
     }
 
-    public void setStudentID(String studentID) {
-        this.studentID = studentID;
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 
     public String getFirstName() {
@@ -38,7 +38,7 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "studentID='" + studentID + '\'' +
+                "studentID='" + studentId + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
